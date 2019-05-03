@@ -4,7 +4,7 @@ import allure
 
 def test1_fail():
     with pytest.allure.step('FAILED'):
-        assert False
+        assert True
 
 
 def test2_fail():
