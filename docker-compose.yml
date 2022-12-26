@@ -7,4 +7,3 @@ services:
       dockerfile: Dockerfile
     volumes:
       - ${WORKSPACE}/allure-results:/allure-results
-    command: sh -c "python -m pytest runner.py --alluredir=allure-results"]
