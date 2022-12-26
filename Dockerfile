@@ -7,4 +7,5 @@ RUN python -m pytest runner.py --alluredir=allure-results
 RUN pwd
 RUN ls
 RUN cd /venv
-RUN ls
+RUN ls venv
+RUN ls allure-results
