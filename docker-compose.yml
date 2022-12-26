@@ -6,4 +6,4 @@ services:
       context: .
       dockerfile: Dockerfile
     volumes:
-      - %WORKSPACE%/allure-results:/allure-results
+      - ${WORKSPACE}/allure-results:/allure-results
