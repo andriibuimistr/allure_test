@@ -6,6 +6,5 @@ RUN python -m pip install -r requirements.txt
 RUN python -m pytest runner.py --alluredir=allure-results
 RUN pwd
 RUN ls
-RUN cd /venv
 RUN ls venv
 RUN ls allure-results
