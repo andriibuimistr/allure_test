@@ -5,3 +5,5 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+    volumes:
+      - %WORKSPACE%/allure-results:/allure-results
