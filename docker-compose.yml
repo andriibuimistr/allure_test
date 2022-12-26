@@ -7,3 +7,4 @@ services:
       dockerfile: Dockerfile
     volumes:
       - ${WORKSPACE}/allure-results:/allure-results
+    entrypoint: ["python", "-m", "pytest", "runner.py", "--alluredir=allure-results"]
