@@ -6,4 +6,4 @@ services:
       context: .
       dockerfile: Dockerfile
     volumes:
-      - $(pwd)/allure-results:/allure-results
+      - ${pwd}/allure-results:/allure-results
