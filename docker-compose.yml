@@ -3,7 +3,6 @@ services:
   app_test:
     build: .
     volumes:
-      - ./allure-results:/allure-results
-      - ./tests:/tests
+      - ./allure-results:/tests/allure-results
     environment:
       - BUILD_VAR_COMMAND_STRING=12345
