@@ -4,7 +4,7 @@ services:
   app_test:
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: Dockerfile2
     volumes:
       - ./allure-results:/tests/allure-results
     environment:
