@@ -5,7 +5,8 @@ RUN python -m venv /tests/venv
 RUN python -m pip install -r requirements.txt
 
 RUN wget https://github.com/allure-framework/allure2/releases/download/2.20.1/allure-2.20.1.zip && unzip allure-2.20.1.zip
-
+ARG JAVA_HOME="java-value"
+ENV JAVA_HOME=$JAVA_HOME
 
 ARG BUILD_VAR_COMMAND_STRING="default_value"
 ENV COMMAND_STRING=$BUILD_VAR_COMMAND_STRING
