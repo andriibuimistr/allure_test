@@ -2,8 +2,7 @@ version: "3"
 services:
   app_test:
     build: .
-#    volumes:
-#      - ./allure-results:/tests/allure-results
-#      - ./allure-report:/tests/allure-report
+    volumes:
+      - ./allure-results:/tests/allure-results
     environment:
       BUILD_VAR_COMMAND_STRING: COMMAND_STRING
