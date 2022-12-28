@@ -6,4 +6,4 @@ services:
       - ./allure-results:/tests/allure-results
       - ./allure-report:/tests/allure-report
     environment:
-      - BUILD_VAR_COMMAND_STRING=12345
+      BUILD_VAR_COMMAND_STRING: COMMAND_STRING
