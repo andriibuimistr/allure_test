@@ -7,4 +7,3 @@ services:
 #      - ./allure-report:/tests/allure-report
     environment:
       BUILD_VAR_COMMAND_STRING: COMMAND_STRING
-      JAVA_HOME: JAVA_HOME
