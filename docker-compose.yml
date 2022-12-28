@@ -1,10 +1,7 @@
 version: "2"
 services:
-
   app_test:
-    build:
-      context: .
-      dockerfile: Dockerfile2
+    build: .
     volumes:
       - ./allure-results:/tests/allure-results
     environment:
