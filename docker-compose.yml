@@ -9,3 +9,4 @@ services:
       - ./allure-results:/tests/allure-results
     environment:
       BUILD_VAR_COMMAND_STRING: "COMMAND_STRING"
+      COMMAND_STRING: "COMMAND_STRING2"
