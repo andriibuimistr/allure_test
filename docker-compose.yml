@@ -4,5 +4,6 @@ services:
     build: .
     volumes:
       - ./allure-results:/tests/allure-results
+      - tests:/tests
     environment:
       - BUILD_VAR_COMMAND_STRING=12345
