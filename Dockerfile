@@ -6,8 +6,8 @@ RUN python -m pip install -r requirements.txt
 
 ARG BUILD_VAR_COMMAND_STRING="default_value"
 ENV COMMAND_STRING=$BUILD_VAR_COMMAND_STRING
-RUN python -m pytest $COMMAND_STRING --alluredir allure-results
-RUN ls allure-results
+CMD python -m pytest $COMMAND_STRING --alluredir allure-results
+
 
 #python -m pytest runner.py --alluredir=allure-results
 
