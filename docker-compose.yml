@@ -5,6 +5,7 @@ services:
     volumes:
       - ./allure-results:/tests/allure-results
       - ./allure-report:/tests/allure-report
+      - C:\Program Files\Java\jdk-17.0.5:/java
     environment:
       BUILD_VAR_COMMAND_STRING: COMMAND_STRING
       JAVA_HOME: JAVA_HOME
