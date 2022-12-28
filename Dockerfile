@@ -10,6 +10,6 @@ ARG BUILD_VAR_COMMAND_STRING="default_value"
 ENV COMMAND_STRING=$BUILD_VAR_COMMAND_STRING
 RUN $COMMAND_STRING
 RUN ls allure-results
-RUN ./allure-2.20.1/bin/allure generate allure-results allure-report
+RUN ./allure-2.20.1/bin/allure/allure.bat generate allure-results allure-report
 #python -m pytest runner.py --alluredir=allure-results
 
